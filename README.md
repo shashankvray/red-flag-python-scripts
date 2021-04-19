@@ -7,4 +7,4 @@
   * Top Coder
   * Code Chef
 
-## "Did you know?" programs
+## "Did you know?" and other programs
