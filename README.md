@@ -1,2 +1,8 @@
-# Coders-Colony-YouTube
-Source code to Competitions from the YouTube Channel - Coders Colony
+# Competitive Programming Questions and answers
+
+Source code to Competitions from :
+  * YouTube Channel - Coders Colony
+  * HackerRank
+  * LeetCode
+  * Top Coder
+  * Code Chef
