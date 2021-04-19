@@ -1,3 +1,6 @@
+## (incomplete) Solution to the Competition 2 by YouTube Channel - Coders Colony
+## This is the driver code to the custom python library "letterMatrix.py" available at - https://github.com/shashankvray/Competitive-Programming/blob/main/letterMatrix.py
+
 class coders_colony:
     def __init__(self, font_size, character):
         self.font_size = font_size
