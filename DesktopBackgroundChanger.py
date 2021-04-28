@@ -1,4 +1,4 @@
-## This code changes your Windows 10 Desktop Background on a daily basis (at 00:00 hours) for an upcoming event to which you want to keep yourself motivated
+## This code changes your Windows 10 Desktop Background on a daily basis (at 00:00 hours) using Windows Task Scheduler for an upcoming event to which you want to keep yourself motivated
 
 ## User custom inputs are to be changed only inside the quotes (" ")
 year_of_event                = "2021"
@@ -22,7 +22,7 @@ for i in requirements:
 from PIL import Image, ImageDraw, ImageFont
 from os import getcwd, remove
 cwd = getcwd()
-## Screen Resolution
+## Get Screen Resolution
 from win32api import GetSystemMetrics
 resX = GetSystemMetrics(0)
 resY = GetSystemMetrics(1)
