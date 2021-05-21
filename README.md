@@ -5,7 +5,7 @@
   * LeetCode
   * Top Coder
   * Code Chef
-  * YouTube Channel - Coders Colony
+  * YouTube Competitions
 
 ## "Did you know?" and other programs
   * powers_of_2.py
