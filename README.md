@@ -1,7 +1,7 @@
 # Competitive Programming Questions and answers
 
 ## Source code to Competitions from :
-  * HackerRank
+  * CodeForces
   * LeetCode
   * Top Coder
   * Code Chef
