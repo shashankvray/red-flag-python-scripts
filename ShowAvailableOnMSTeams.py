@@ -1,6 +1,11 @@
-## Show yourself Available on MS Teams (Note: This will not send any msg to any peer or colleague)
+## Show yourself 'Available' on MS Teams (Note: This will NOT send any msg to any peer or colleague)
 ## Ctrl + C --> KeyboardInterrupt to stop the process
+## REQUIREMENT(S) - "pyautogui"  --> pip install pyautogui
 
+## Specify the time in hours (24-hour) when your office-hours ends:
+office_hour_end = 18  ## 6:00 PM
+
+#################################################################################################################
 import pyautogui
 import time
 import os
@@ -24,7 +29,7 @@ while(True):
     if a > 10:
         pyautogui.hotkey('ctrl','a')
         a = 0
-        if int(time.strftime("%H", time.localtime())) == 18:
+        if int(time.strftime("%H", time.localtime())) == office_hour_end:
             os.system("shutdown /h")
     pyautogui.typewrite("Hello ")
     time.sleep(30)
