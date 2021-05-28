@@ -10,3 +10,4 @@
 ## Other programs
   * powers_of_2.py
   * 0.30000000000000004.py
+  * ShowAvailableOnMSTeams.py
