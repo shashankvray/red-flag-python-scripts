@@ -35,15 +35,12 @@ draw = ImageDraw.Draw(image)
 
 import datetime
 interval = datetime.date(int(year_of_event), int(month_of_the_event), int(date_of_the_event)) - datetime.date.today()
-#(620,220)
-#(500,360)
-##1366, 768
-##683,  384
+
 #draw.text(resX/2 - (len(str(interval.days))/2), resX/2 - int(115/2), f'{interval.days}', font = days_num, fill=(255,255,255), align='center')
 #draw.text(resX/2 - (len(str(interval.days))/2), resX/2 - int(25/2),"days  left  for  the  exam\n", font = days_left, fill=(255,255,255), align='center')
-draw.text((620,220), f'{interval.days}', font = days_num, fill = font_color, align = 'center')
-draw.text((480,340),"days  left  for  the  " + event, font = days_left, fill = font_color, align = 'center')
-draw.text((10,560),"1  GRE Big Book Test\n1  GregMat Vocab Word Set\n2  Manhattan 5LB Chapters\n2  The Economist Article\n10 GMAT OG + 5 Greg POTD\n4  Videos - Verbal Reading Comprehension Skills\n2  Chapters - Word Power Made Easy\n2  Videos --  ../powerhour",font = ImageFont.truetype(r'times', 18), fill = font_color)
+draw.text((610,220), f'{interval.days}', font = days_num, fill = font_color, align = 'center')
+draw.text((460,340),"days  left  for  the  " + event, font = days_left, fill = font_color)
+draw.text((550,370),"Today:  " + datetime.datetime.now().strftime("%A"), font = days_left, fill = font_color)
 image.save(cwd + r'\PyImage.png')
 
 ##Setting Desktop Background
