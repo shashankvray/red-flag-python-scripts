@@ -1,4 +1,5 @@
-## Show yourself Available on MS Teams
+## Show yourself Available on MS Teams (Note: This will not send any msg to any peer or colleague)
+## Ctrl + C --> KeyboardInterrupt to stop the process
 
 import pyautogui
 import time
