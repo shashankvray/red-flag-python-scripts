@@ -7,7 +7,6 @@
   * Code Chef
   * YouTube Competitions
 
-## "Did you know?" and other programs
+## Other programs
   * powers_of_2.py
-  * DesktopBackgroundChanger.py
   * 0.30000000000000004.py
