@@ -1,19 +1,29 @@
-# Verbal Reading Comprehension Skills #
+## Show yourself Available on MS Teams
 
-1.  Main Idea              - 4  -->     Completed 
-2.  Simplifying            - 9  -->     Completed 
-3.  Function               - 9  -->     Completed 
-4.  Important Words        - 5  -->     Completed 
-5.  Long Passages          - 3  -->     Completed 
-6.  Inferences             - 4  -->     Completed 
-7.  Predicting             - 2  -->     Completed 
-8.  Critical Reasoning     - 3  -->     Completed 
-9.  Questions              - 6  -->     Completed 
-10. Scanning               - 2  -->     Completed 
-11. Elimination            - 3  -->     Completed 
-12. Defending              - 1  -->     Completed 
+import pyautogui
+import time
+import os
 
-            TOTAL       === 51 hours
-            Real Time   === 25 hours + 3 hours (pause/play)
-                            28 HOURS
-;
+os.system(os.environ['USERPROFILE'] + "\\AppData\\Local\\Microsoft\\Teams\\Update.exe --processStart \"Teams.exe\"")
+
+pyautogui.getWindowsWithTitle("Teams")[0].maximize()
+
+pyautogui.moveTo(238, 166, duration = 0.6)
+pyautogui.scroll(500)
+time.sleep(0.4)
+pyautogui.click( 238, 166)
+
+pyautogui.moveTo(544, 664, duration = 0.5)
+pyautogui.click( 544, 664)
+pyautogui.moveTo(824, 664)
+
+a = 0
+while(True):
+    a+=1
+    if a > 10:
+        pyautogui.hotkey('ctrl','a')
+        a = 0
+        if int(time.strftime("%H", time.localtime())) == 18:
+            os.system("shutdown /h")
+    pyautogui.typewrite("Hello ")
+    time.sleep(30)
