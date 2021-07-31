@@ -1,5 +1,4 @@
-## 1st Place Winner Code of the competition from the YouTube Channel - Coders Colony
-## YouTube Channel - https://www.youtube.com/channel/UCUKgbFdV2XtH-YXWEk4_FWw
+## 1st Place Winner Code of the competition from the - Coders Colony
 
 def Digital(str):
 	san = ["shun","ekam","dvee","trin","catv","panc","shat","sapt","asta","nava"]
