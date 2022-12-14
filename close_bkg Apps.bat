@@ -34,15 +34,15 @@ CALL "C:\Users\Shashank V Ray\AppData\Local\Microsoft\Teams\Update.exe" --proces
 )
 
 taskkill /F /IM "FortiClient.exe" /T
-CALL "%USERPROFILE%\OneDrive - Profinch Solutions Private Limited\Java Team - Rahul Agarwal\FORTICLIENT INSTALLATION FOLDER\FortiClient\FortiTray.exe" --shutdown
 CALL "C:\Program Files\Fortinet\FortiClient\FortiTray.exe" --shutdown
 REM taskkill /F /IM "PowerToys.exe" /T
 REM taskkill /F /IM "PowerToys.PowerLauncher.exe" /T
 REM taskkill /F /IM "msedge.exe" /T
 REM taskkill /F /IM "msedgewebview2.exe" /T
-"C:\Users\Shashank V Ray\OneDrive - Profinch Solutions Private Limited\TMB Support\OpenVPN\bin\openvpn-gui.exe" --command disconnect openvpn-shashank.ray-inline.ovpn
+"C:\Program Files\OpenVPN\bin\openvpn-gui.exe" --command disconnect openvpn-shashank.ray-inline.ovpn 
 
 taskkill /F /IM "OneDrive.exe" /T
+taskkill /F /IM "TeamViewer.exe" /T
 taskkill /F /IM "SSPService.exe" /T
 taskkill /F /IM "SophosFileScanner.exe" /T
 taskkill /F /IM "TeamViewer_Service.exe" /T
@@ -91,13 +91,13 @@ taskkill /F /IM "FortiSettings.exe" /T
 taskkill /F /IM "HxTsr.exe" /T
 taskkill /F /IM "UserOOBEBroker.exe" /T
 
-REM del "%USERPROFILE%\OneDrive - Profinch Solutions Private Limited\Desktop\nulx" /s /f /q
 del "%USERPROFILE%\AppData\Local\pip\cache" /s /f /q
 rmdir "%TEMP%\" /q /s
 rmdir "%TEMP%\*" /q /s
 
-del "%USERPROFILE%\OneDrive - Profinch Solutions Private Limited\Pictures\Screenshots*" /s /f /q
 del "%TEMP%\*.*" /s /f /q
+"C:\Program Files\OpenVPN\bin\openvpn-gui.exe" --command exit
+
 @taskkill /f /im explorer.exe >nul
 @start explorer.exe >nul
 REM pause
